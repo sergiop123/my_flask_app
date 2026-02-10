@@ -1,0 +1,100 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --muted: #94a3b8;
+  --text: #e5e7eb;
+  --accent: #22c55e;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1.25rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.filter-form {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+label {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+select {
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background: #0b1220;
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: #0a0a0a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background: #334155;
+  color: var(--text);
+}
+
+.result {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 16px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border-bottom: 1px solid #1f2937;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+.table th {
+  color: var(--muted);
+  background: #0b1220;
+}
+
+.table-striped tr:nth-child(even) {
+  background: #0b1220;
+}
+
